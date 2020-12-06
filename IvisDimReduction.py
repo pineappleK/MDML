@@ -1,3 +1,15 @@
+###############################################################################
+# IvisDimReduction.py
+# Version 1.0.0
+# 2020-12-06
+# pineapple
+#
+# Description:
+# This scripts enables you toreduct the huge dimension of molecular dynamics trajectory, 
+# and tell you which CV is more important.
+###############################################################################
+
+
 # import package
 from MDAnalysis.lib.distances import distance_array
 from tensorflow.keras.utils import HDF5Matrix
