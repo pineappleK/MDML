@@ -184,7 +184,11 @@ model = Ivis(**metrics_ivis)
 model.fit(X, shuffle_mode='batch')
 model.save_model('iris.ivis')
 
-# original feature importances
+## feature importances
+
+# 1) The first layer (n * 500)
+f1 = np.load("/home/hipeson/data01/pineapple/PP-Ras/pp/RasIvisTest/iris.ivis/optimizer_state.npy", allow_pickle=True)
+# 2) Linear Regression
 explainer = LinearExplainer(model)
 X_value = np.array(X)
 feature_importances = explainer.feature_importances_(X_value)
