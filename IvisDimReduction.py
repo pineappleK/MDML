@@ -187,7 +187,7 @@ model.save_model('iris.ivis')
 ## feature importances
 
 # 1) The first layer (n * 500)
-f1 = np.load("/home/hipeson/data01/pineapple/PP-Ras/pp/RasIvisTest/iris.ivis/optimizer_state.npy", allow_pickle=True)
+f1 = np.load("optimizer_state.npy", allow_pickle=True)
 # 2) Linear Regression
 explainer = LinearExplainer(model)
 X_value = np.array(X)
